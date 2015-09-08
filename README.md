@@ -17,6 +17,8 @@ The OData protocol also has support the $filter clause.  However, implementing o
 
 Instead, we implemented a $sqlfiter clause, where the use can specify a PostgreSQL where clause.  In our view, this is actually a more powerful implementation as you have full access to PostgreSQL's filtering capabilities which is a superset of the OData $filter clause.
 
+**Note:** $sqlfilter is mutually exclusive to the $skip and $top parameters, as you can specify skip/top functionality using SQL primitives (e.g. [$top -> limit; $skip -> offset](http://www.postgresql.org/docs/8.2/static/queries-limit.html))
+
 
 Installation
 ------------

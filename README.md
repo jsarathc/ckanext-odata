@@ -9,7 +9,7 @@ An _OData Endpoint_ link is added to resources, showing up as an additional endp
 
 Usage
 -----
-This implementation supports the following [OData parameters](http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/):
+This fork supports the following [OData parameters](http://www.odata.org/documentation/odata-version-3-0/odata-version-3-0-core-protocol/):
 * $skip - number of records to skip from top (default: 0)
 * $top - number of records to return (default:500)
 

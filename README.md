@@ -2,7 +2,7 @@
 ckanext-odata
 =============
 
-This CKAN extension provides a basic OData 3.0 endpoint for CKAN.
+This CKAN extension provides a basic OData 3.0 endpoint for CKAN.  This allows it to talk to tools like the **FREE** [Tableau Public](https://public.tableau.com/s/) for [awesome visualizations using data from CKAN](http://data.beta.nyc/showcase?tags=tableau)!
 
 The endpoint requires data to be held in the CKAN Datastore.
 An _OData Endpoint_ link is added to resources, showing up as an additional endpoint when the Data API button is pressed.

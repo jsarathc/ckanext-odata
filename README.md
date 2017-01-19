@@ -13,11 +13,11 @@ This fork supports the following [OData parameters](http://www.odata.org/documen
 * $skip - number of records to skip from top (default: 0)
 * $top - number of records to return (default:500)
 
-The OData protocol also has support the $filter clause.  However, implementing one is non-trivial as its a dialect that doesn't directly map to PostgreSQL.
+The OData standard also specifies support for the **$filter** clause.  However, implementing one is non-trivial as its a dialect that doesn't directly map to PostgreSQL.
 
-Instead, we implemented a $sqlfiter clause, where the user can specify a PostgreSQL where clause.  In our view, this is actually a more powerful implementation as the user has full access to PostgreSQL's filtering capabilities which is a superset of the OData $filter clause.
+Instead, we implemented a **$sqlfiter** clause, where the user can specify a PostgreSQL where clause.  In our view, this is actually a more powerful implementation as the user has full access to PostgreSQL's filtering capabilities which is a superset of the OData $filter clause.
 
-**Note:** $sqlfilter is mutually exclusive to the $skip and $top parameters, as you can specify skip/top functionality using SQL primitives (e.g. [$top -> limit; $skip -> offset](http://www.postgresql.org/docs/8.2/static/queries-limit.html))
+**Note:** $sqlfilter is mutually exclusive to the $skip and $top parameters, as you can specify skip/top functionality using SQL primitives (e.g. [$top -> limit in SQL; $skip -> offset in SQL](http://www.postgresql.org/docs/8.2/static/queries-limit.html))
 
 
 Installation
